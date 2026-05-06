@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { BotonPrimario } from '../src/components/ui/BotonPrimario';
+import { BotonPrimario } from '../../src/components/ui/BotonPrimario';
 
 describe('BotonPrimario', () => {
   it('renders children correctly', () => {
