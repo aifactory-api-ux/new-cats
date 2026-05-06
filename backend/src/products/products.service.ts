@@ -53,8 +53,8 @@ export class ProductsService {
     }
 
     const total = filtered.length;
-    const page = parseOptionalInt(query.page, 1);
-    const limit = parseOptionalInt(query.limit, 10);
+    const page = parseOptionalInt(String(query.page), 1);
+    const limit = parseOptionalInt(String(query.limit), 10);
     const start = (page - 1) * limit;
     const paginated = filtered.slice(start, start + limit);
 
