@@ -25,7 +25,7 @@ export function Pago() {
             <label style={{ display: 'block', color: tokens.colors.text_primary, marginBottom: tokens.spacing.sm }}>Dirección</label>
             <input type="text" style={{ width: '100%', padding: tokens.spacing.md, borderRadius: tokens.radii.md, border: '1px solid', borderColor: tokens.colors.text_secondary }} />
           </div>
-          <BotonPrimario type="submit" onClick={(e) => { e.preventDefault(); alert('Pago procesado'); }}>
+          <BotonPrimario type="submit" onClick={() => { alert('Pago procesado'); }}>
             Confirmar Pago
           </BotonPrimario>
         </form>

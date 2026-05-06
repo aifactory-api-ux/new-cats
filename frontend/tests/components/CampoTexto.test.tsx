@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { CampoTexto } from '../src/components/ui/CampoTexto';
+import { CampoTexto } from '../../src/components/ui/CampoTexto';
 
 describe('CampoTexto', () => {
   it('renders label correctly', () => {

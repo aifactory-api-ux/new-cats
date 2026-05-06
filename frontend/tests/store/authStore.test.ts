@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { authStore } from '../src/store/authStore';
+import { authStore } from '../../src/store/authStore';
 
 describe('authStore', () => {
   it('should have initial state', () => {

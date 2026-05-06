@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { productStore } from '../src/store/productStore';
+import { productStore } from '../../src/store/productStore';
 
 describe('productStore', () => {
   it('should have initial empty products state', () => {

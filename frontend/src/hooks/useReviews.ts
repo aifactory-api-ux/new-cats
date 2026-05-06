@@ -10,8 +10,8 @@ export function useReviews(productId: string) {
     setLoading(true);
     setError(null);
     try {
-      const data = await api.get(`/api/products/${productId}/reviews`);
-      setReviews(data);
+      const data = await api.get<any[]>(`/api/products/${productId}/reviews`);
+      setReviews(data as any[]);
       return data;
     } catch (err: any) {
       setError(err.message || 'Failed to fetch reviews');
