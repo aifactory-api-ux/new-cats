@@ -55,7 +55,7 @@ export class AuthService {
     return this.usersService.findById(userId);
   }
 
-  private hashPassword(password: string): string {
+  public hashPassword(password: string): string {
     return crypto.createHash('sha256').update(password).digest('hex');
   }
 
